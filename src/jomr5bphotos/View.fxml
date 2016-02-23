@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="jomr5bphotos.Controller">
+  <columnConstraints>
+    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="40.0" minWidth="40.0" prefWidth="40.0" />
+    <ColumnConstraints hgrow="SOMETIMES" />
+      <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="40.0" minWidth="40.0" prefWidth="40.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Button mnemonicParsing="false" onAction="#leftClicked" prefHeight="100.0" prefWidth="30.0" text="&lt;" />
+      <Button mnemonicParsing="false" onAction="#rightClicked" prefHeight="100.0" prefWidth="30.0" text="&gt;" GridPane.columnIndex="2">
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </Button>
+      <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1">
+         <children>
+            <StackPane>
+               <children>
+                  <Label fx:id="statusText" alignment="TOP_CENTER" text="JSON Parser: Image Data" textAlignment="CENTER">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+            </StackPane>
+            <StackPane layoutX="10.0" layoutY="10.0">
+               <children>
+                  <Label fx:id="imageFileName" alignment="TOP_CENTER" text="JSON Parser: Image Data" StackPane.alignment="CENTER_LEFT">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <padding>
+                        <Insets top="10.0" />
+                     </padding>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+            </StackPane>
+            <StackPane layoutX="10.0" layoutY="45.0">
+               <children>
+                  <Label fx:id="imageTitle" alignment="TOP_CENTER" text="JSON Parser: Image Data" StackPane.alignment="CENTER_LEFT">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <padding>
+                        <Insets top="10.0" />
+                     </padding>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+            </StackPane>
+            <StackPane layoutX="10.0" layoutY="45.0">
+               <children>
+                  <Label fx:id="description" alignment="TOP_CENTER" text="JSON Parser: Image Data" StackPane.alignment="CENTER_LEFT">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <padding>
+                        <Insets top="10.0" />
+                     </padding>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+            </StackPane>
+            <StackPane layoutX="10.0" layoutY="45.0">
+               <children>
+                  <Label fx:id="date" alignment="TOP_CENTER" text="JSON Parser: Image Data" StackPane.alignment="CENTER_LEFT">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <padding>
+                        <Insets top="10.0" />
+                     </padding>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+            </StackPane>
+            <StackPane layoutX="15.0" layoutY="180.0">
+               <children>
+                  <Label fx:id="latitude" alignment="TOP_CENTER" text="JSON Parser: Image Data" StackPane.alignment="CENTER_LEFT">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <padding>
+                        <Insets top="10.0" />
+                     </padding>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+            </StackPane>
+            <StackPane layoutX="15.0" layoutY="220.0">
+               <children>
+                  <Label fx:id="longitude" alignment="TOP_CENTER" text="JSON Parser: Image Data" StackPane.alignment="CENTER_LEFT">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <padding>
+                        <Insets top="10.0" />
+                     </padding>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+            </StackPane>
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </VBox>
+   </children>
+   <padding>
+      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+   </padding>
+</GridPane>
